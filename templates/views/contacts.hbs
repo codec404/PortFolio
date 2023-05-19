@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="shortcut icon" href="assets/css/Pics/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><div style="height: 100%; margin-top: 7px;"><i class="lnr lnr-arrow-up" style="font-size: 16px;font-weight: bolder;"></i></div></button>
+    {{>navBar}}
+    <div class="main-contact">
+        <div class="navBar">
+            <div class="portfolio pf">
+                <h2 class="logo">
+                    Portfolio
+                </h2>
+            </div>
+            <ul class="list">
+                <li class="home" id="hm1"><a href="/">HOME</a></li>
+                <li class="about" id="abt1">ABOUT</li>
+                <li class="services" id="srv1" style="margin-left: 7px;">SERVICES</li>
+                <li class="skills" id="skl1" style="margin-left: 5px;">SKILLS</li>
+                <li class="stories" id="stories1"><a href="/stories">STORIES</a></li>
+                <li class="contacts" id="cncts1" style="margin-left: 9px;"><a href="/contacts">CONTACTS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-form">
+        <div class="head">
+            <h2>Contact Me</h2> 
+            <div class="page-link">
+                <div class="page homE" style="width: 37.6562px;">
+                <a href="/"style="text-decoration:none;" class="contactToHome">Home </a>
+                </div>
+                <div class="page arrowIcon" style="width: 16px;">
+                    <i class="lnr lnr-arrow-right contactArrow"></i>
+                </div>
+                <div class="page contact-me" style="width: 72.0208px;">
+                <a href="/contacts"style="text-decoration:none;" class="Me">Contact Me</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="contactDetails">
+            <div class="contactItems House">
+                <i class="lnr lnr-home" style="color: #766dff; font-size:20px; font-weight:600;"></i>
+               <div class="box">
+                <h6>Bardhaman, West Bengal</h6>
+                <p>Memari Subhas Nagar</p>
+               </div> 
+            </div>
+            <div class="contactItems Phone">
+                <i class="lnr lnr-phone-handset" style="color: #766dff; font-size:20px; font-weight:600;"></i>
+               <div class="box">
+                <h6>(+91) 7384470959</h6>
+                <p>Every Day 11am to 8pm</p>
+               </div> 
+            </div>
+            <div class="contactItems Mail">
+                <i class="lnr lnr-envelope" style="color: #766dff; font-size:20px; font-weight:600;"></i>
+               <div class="box">
+                <h6>saptarshi123sg@gmail.com</h6>
+                <p>Send me query anytime</p>
+               </div> 
+            </div>
+        </div>
+        <div class="sendMessage">
+            <form class="queryForm" action="/contacts" method="post">
+                <div class="importants">
+                    <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Enter Your Name *" value="" id="fullname" required/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Enter Your Email *" value="" id="email" required/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Enter Your Phone Number *" value="" id="phoneNum" required/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Enter Your Query *" value="" id="subjectQuery" required/>
+                    </div>
+                </div>
+                <div class="elaborate">
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Elaborate your doubt"></textarea>
+                    <input type="submit" value="submit" class="submit_btn">
+                </div>
+            </form>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
