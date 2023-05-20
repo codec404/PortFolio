@@ -19,8 +19,9 @@ app.use(express.static(static_path));
 app.set("view engine", "hbs");
 app.set("views" , template_path);
 hbs.registerPartials(partial_path)
+
 app.get('/',(req,res) =>{
-    res.render("index");
+    res.send("index");
 });
 
 app.get('/stories',(req,res) =>{

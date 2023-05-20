@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "This is structured Personal Portfolio",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm src/app.js",
+    "start": "node src/app.js",
     "dev": "nodemon src/app.js -e js,hbs"
   },
   "author": "Saptarshi Ghosh",
