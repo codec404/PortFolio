@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Services Offered</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -32,8 +32,8 @@
     </div>
     <div class="container-form">
         <div class="head">
-            <h2>Contact Me</h2> 
-            <div class="page-link">
+            <h2>Services</h2> 
+            <div class="page-link" style="margin-left: 16px;">
                 <div class="page homE" style="width: 37.6562px;">
                 <a href="/"style="text-decoration:none;" class="contactToHome">Home </a>
                 </div>
@@ -41,56 +41,46 @@
                     <i class="lnr lnr-arrow-right contactArrow"></i>
                 </div>
                 <div class="page contact-me" style="width: 72.0208px;">
-                <a href="/contacts"style="text-decoration:none;" class="Me">Contact Me</a>
+                <a href="/services"style="text-decoration:none;" class="Me">Services</a>
                 </div>
             </div>  
         </div>
     </div>
-    <div class="container-body">
-        <div class="contactDetails">
-            <div class="contactItems House">
-                <i class="lnr lnr-home" style="color: #766dff; font-size:20px; font-weight:600;"></i>
-               <div class="box">
-                <h6>Bardhaman, West Bengal</h6>
-                <p>Memari Subhas Nagar</p>
-               </div> 
+        <div class="OffertoClients">
+        <div class="mainDiv">
+            <div class="headPar">
+                <h2>Offerings to my Clients</h2>
+                <p>If you are looking any help in web-dev,python-dev or problem solving you may ask me your question. Materials will also be provided shortly!!!</p>
             </div>
-            <div class="contactItems Phone">
-                <i class="lnr lnr-phone-handset" style="color: #766dff; font-size:20px; font-weight:600;"></i>
-               <div class="box">
-                <h6>(+91) 7384470959</h6>
-                <p>Every Day 11am to 8pm</p>
-               </div> 
-            </div>
-            <div class="contactItems Mail">
-                <i class="lnr lnr-envelope" style="color: #766dff; font-size:20px; font-weight:600;"></i>
-               <div class="box">
-                <h6>saptarshi123sg@gmail.com</h6>
-                <p>Send me query anytime</p>
-               </div> 
-            </div>
-        </div>
-        <div class="sendMessage">
-            <form class="queryForm" action="/contacts" method="post" onsubmit="alert("Success")">
-                <div class="importants">
-                    <div class="form-group">
-                    <input class="form-control" name="name" type="text" placeholder="Enter Your Name *" value="" id="fullname" required/>
+            <div class="representation">
+                <div class="devItems web">
+                    <div class="devIcon">
+                        <i class="lnr lnr-code" style="color: #7777;font-size: 100px;font-weight: 100;"></i>
                     </div>
-                    <div class="form-group">
-                        <input class="form-control" name="email" type="text" placeholder="Enter Your Email *" value="" id="email" required/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" name="phone" type="text" placeholder="Enter Your Phone Number *" value="" id="phoneNum" required/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" name="query" type="text" placeholder="Enter Your Query *" value="" id="subjectQuery" required/>
+                    <div class="divTxt">
+                        <h4>Web Development</h4>
+                        <p>If you are looking for interactive websites, then you can get it by paying as low as $1. Price solely depends on the type of website to develop.</p>
                     </div>
                 </div>
-                <div class="elaborate">
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Elaborate your doubt"></textarea>
-                    <input type="submit" value="Submit" class="submit_btn" id="submit_btn">
+                <div class="devItems py">
+                    <div class="devIcon " style="padding-left: 5px;padding-bottom: 5px;">
+                        <i class="lnr lnr-bug" style="color: #7777;font-size: 75px;font-weight: 100;"></i>
+                    </div>
+                    <div class="divTxt">
+                        <h4>Python Development</h4>
+                        <p>If you are looking for any development based on python, then you can contact me for the same and get it at a price as low as $1. The price solely depends on the type of Project.</p>
+                    </div>    
                 </div>
-            </form>
+                <div class="devItems prob">
+                    <div class="devIcon">
+                        <i class="lnr lnr-laptop-phone" style="color: #7777;font-size: 80px;font-weight: 100;"></i>
+                    </div>
+                    <div class="divTxt">
+                        <h4>Problem Solving</h4>
+                        <p>Any problem regarding Data Structures and Algorithms can be addressed. Questions from several Competitive Programming platforms are also welcome.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     {{>footer}}

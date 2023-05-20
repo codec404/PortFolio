@@ -1397,6 +1397,7 @@ footer {
   font-size: 14px;
   line-height: 24px;
   padding: 2px 0px;
+  font-family: "Roboto",sans-serif;
 }
 
 .box {
@@ -1410,7 +1411,7 @@ footer {
 .sendMessage {
   height: 400px;
   width: 1000px;
-  /* border: 1px solid black; */
+  /* border: 1px solid black;  */
   margin-left: 20px;
   padding: 1px;
   display: flex;
@@ -1425,8 +1426,8 @@ footer {
   /* background: #7875fc; */
   margin-top: 10px;
   display: flex;
-  padding-left: 35px;
-  padding-top: 50px;
+  padding-left: 85px;
+  padding-top: 70px;
 }
 
 .form-group {
@@ -1447,13 +1448,16 @@ footer {
 }
 
 .elaborate {
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .elaborate textarea {
+  border: 0.1px solid rgb(222, 219, 219);
   border-radius: 5px;
   padding: 7px;
   padding-left: 7px;
+  width: 370px;
+  height: 190px;
 }
 
 .elaborate textarea:focus {
@@ -1462,12 +1466,31 @@ footer {
 }
 
 .submit_btn {
-  margin-left: 61px;
-  margin-top: 35px;
-  width: 191px;
+  margin-left: 150px;
+  margin-top: 55px;
+  width: 200px;
   height: 37px;
-  background: blueviolet;
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
+  color: #f8f8f8;
+  cursor: pointer;
+  background: linear-gradient(to right,#7875fc 0%,#8bc5f5 80%);
+  font-size: 18px;
+}
+
+.submit_btn:hover{
+  background: #f8f8f8;
+  box-shadow: 0px 20px 80px 0px rgba(122, 121, 121, 0.2);
+  border: 1px solid black;
+  color: #7875fc;
+}
+
+.about-control{
+  margin-top: 150px
+}
+
+.about-disp{
+  box-shadow: none;
+  border: 1px solid #ece7e7;
 }
