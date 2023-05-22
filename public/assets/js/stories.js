@@ -12,6 +12,12 @@ console.log("@Audio Conclave");
 //   console.log(zidx);
 // }
 
+let loader = document.getElementById("preloader");
+
+window.addEventListener("load",()=>{
+  loader.style.display = "none";
+});
+
 window.onload = function(){
   
   const prevBtn = document.getElementById('prev');
